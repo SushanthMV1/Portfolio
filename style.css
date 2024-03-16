@@ -1,0 +1,227 @@
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-size: cover;
+  background-color: #3aafa9;
+}
+
+/* Scroll Bar */
+html::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #3aafa9;
+  border-radius: 0.3rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #def2f1;
+}
+
+/* Navigation Bar */
+header {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+}
+
+.logo {
+  width: 30%;
+  height: 4rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  margin-left: 10px;
+}
+
+nav {
+  width: 70%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navlink {
+  text-decoration: none;
+  font-weight: 500;
+  color: #feffff;
+  font-size: 1rem;
+}
+
+/* Hero */
+.hero {
+  width: 80%;
+  height: 33.5rem;
+  background-color: #feffff;
+  border-radius: 1rem;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Common Elements Among Sections */
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2b7a78;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section {
+  width: 80%;
+  padding: 4rem 10%;
+}
+
+.text {
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
+}
+
+/* About Section */
+.about {
+  background-color: #feffff;
+  height: 28rem;
+}
+.aboutMatter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutContent {
+  width: 50%;
+}
+
+.aboutResume {
+  width: 120px;
+  height: 2rem;
+  background-color: #17252a;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume {
+  text-decoration: none;
+  color: #feffff;
+}
+
+.aboutImage {
+  width: 30%;
+}
+/* My Projects Section */
+.projects {
+  background-color: #def2f1;
+  height: 19.8rem;
+}
+
+.projectCards {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.projectCard {
+  height: 240px;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 2rem;
+}
+
+.projectImage {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectName {
+  height: 38px;
+  width: 270px;
+  padding: 0% 5%;
+  border-top: 2px solid #17252a;
+  display: flex;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  height: 300px;
+  background-color: #17252a;
+  color: #feffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Contact form */
+.contact {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  color: #feffff;
+}
+
+.footerSubTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0rem;
+}
+
+.contactElement {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+}
+
+footer label {
+  font-size: 0.8rem;
+}
+
+.contactInput {
+  width: 100%;
+}
+
+.contactButton {
+  width: 6rem;
+  height: 2rem;
+  color: #feffff;
+  font-weight: 500;
+  background-color: #3aafa9;
+  border-radius: 1rem;
+}
+
+/* Quick Links */
+.quickLinks {
+  width: 30%;
+}
+
+.linksList {
+  margin: 0.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
