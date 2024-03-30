@@ -8,6 +8,10 @@ body {
   background-color: #3aafa9;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Scroll Bar */
 html::-webkit-scrollbar {
   width: 0.6rem;
@@ -25,25 +29,25 @@ html::-webkit-scrollbar-track {
 /* Navigation Bar */
 header {
   width: 100%;
-  height: 4rem;
+  height: 8vh;
   display: flex;
 }
 
 .logo {
   width: 30%;
-  height: 4rem;
+  height: 8vh;
   color: white;
   display: flex;
   align-items: center;
 }
 
 .logoImage {
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 nav {
   width: 70%;
-  height: 4rem;
+  height: 8vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -59,10 +63,10 @@ nav {
 /* Hero */
 .hero {
   width: 80%;
-  height: 33.5rem;
+  height: 76vh;
   background-color: #feffff;
   border-radius: 1rem;
-  margin: 4rem auto;
+  margin: 8vh auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,6 +89,10 @@ nav {
 .text {
   font-size: 1rem;
   margin: 0.5rem 0rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* About Section */
@@ -177,18 +185,18 @@ footer {
   justify-content: space-between;
 }
 
+.footerSubTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
+}
+
 /* Contact form */
 .contact {
   width: 40%;
   display: flex;
   flex-direction: column;
   color: #feffff;
-}
-
-.footerSubTitle {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 0rem;
 }
 
 .contactElement {
@@ -215,13 +223,35 @@ footer label {
   border-radius: 1rem;
 }
 
-/* Quick Links */
-.quickLinks {
+/* Footer Right */
+.footerRight {
   width: 30%;
 }
+
+/* Quick Links */
 
 .linksList {
   margin: 0.5rem 0rem;
   display: flex;
   flex-direction: column;
+}
+
+/* Social Media */
+.socialMedia {
+  margin-top: 1.5rem;
+}
+/* Back to Top */
+#backToTop {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: red;
+  text-decoration: none;
+  font-weight: 1000;
+  font-size: 3rem;
+  transform: rotate(270deg);
+  bottom: 1.25rem;
+  right: 1.25rem;
+  position: fixed;
 }
