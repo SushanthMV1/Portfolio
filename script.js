@@ -14,10 +14,10 @@ window.addEventListener("scroll", () => {
 //3d Button at Submit and reset buttons in contact form
 button = (id) => {
   if (id == "button1") {
-    document.getElementById("button1").style.boxShadow = "none";
-    document.getElementById("button1").style.transform = "translateY(0.25rem)";
+    document.getElementById("button1").style.boxShadow = "0rem 0.15rem #2b7a78";
+    document.getElementById("button1").style.transform = "translateY(0.15rem)";
   } else if (id == "button2") {
-    document.getElementById("button2").style.boxShadow = "none";
-    document.getElementById("button2").style.transform = "translateY(0.3rem)";
+    document.getElementById("button2").style.boxShadow = "0rem 0.15rem #2b7a78";
+    document.getElementById("button2").style.transform = "translateY(0.15rem)";
   }
 };
