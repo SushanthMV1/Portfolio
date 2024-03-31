@@ -18,16 +18,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" href="./Assets/icon.png" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <!-- Logo -->
       <div class="logo">
         <img src="./Assets/logo.png" class="logoImage" width="176px" />
       </div>
       <!-- Navigation Bar -->
       <nav id="navbar">
-        <a href="#navbar" class="navlink">Home</a>
+        <a href="#top" class="navlink">Home</a>
         <a href="#about" class="navlink">About</a>
         <a href="#projects" class="navlink">Projects</a>
         <a href="#feedback" class="navlink">Contact Me</a>
@@ -35,6 +36,7 @@
     </header>
 
     <!-- Hero -->
+    <div id="top"></div>
     <div class="hero">
       <img src="./Assets/Hero Image.png" class="heroImage" width="90%" />
     </div>
@@ -42,6 +44,7 @@
     <!-- About -->
     <div class="about section" id="about">
       <div class="aboutTitle title">About Me</div>
+      <!-- Introduction -->
       <div class="aboutMatter">
         <div class="aboutContent">
           <div class="aboutText text">
@@ -56,12 +59,16 @@
             want to know more about me, click View more. Also, I have attached
             my resume for reference.
           </div>
-          <div class="aboutResume"><a href="" class="resume">My Resume</a></div>
+          <div class="aboutResume"><a href="" class="resume">View More</a></div>
         </div>
-
         <div class="aboutImage">
           <img src="./Assets/aboutsection-removebg-preview.png" width="100%" />
         </div>
+
+        <!-- View More -->
+
+        <!-- Education -->
+        <!-- Skills I have -->
       </div>
     </div>
 
@@ -146,10 +153,20 @@
         <!-- Buttons -->
         <div class="contactButtons">
           <!-- Submit -->
-          <input type="submit" class="contactButton" />
+          <input
+            type="submit"
+            class="contactButton"
+            onclick="button(this.id)"
+            id="button1"
+          />
 
           <!-- Reset -->
-          <input type="reset" class="contactButton" />
+          <input
+            type="reset"
+            class="contactButton"
+            onclick="button(this.id)"
+            id="button2"
+          />
         </div>
       </form>
 
@@ -191,7 +208,7 @@
     </footer>
 
     <!-- Back to top -->
-    <a href="#navbar" id="backToTop">
+    <a href="#top" id="backToTop">
       <i class="fa-solid fa-angle-up" style="color: #17252a"></i>
     </a>
 
