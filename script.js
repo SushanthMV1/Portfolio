@@ -2,12 +2,20 @@ window.addEventListener("scroll", () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
   let scrollPercent = (window.scrollY / scrollable) * 100;
 
-  //Adding shadow to Navbar
+  //Scroll Progress
+  document.getElementById("scrollProgress1").style.width = scrollPercent + "%";
+  let noScrollPercent = 100 - scrollPercent;
+  document.getElementById("scrollProgress2").style.width =
+    noScrollPercent + "%";
+
+  //Adding shadow to Navbar AND Scroll Progress
   if (scrollPercent > 0) {
     document.getElementById("header").style.boxShadow =
-      "0rem 0.3rem 0.3rem rgba(17, 17, 17, 0.6)";
+      "0rem 0.45rem 0.45rem rgba(17, 17, 17, 0.6)";
+    document.getElementById("scrollProgress").style.opacity = 1;
   } else {
     document.getElementById("header").style.boxShadow = "none";
+    document.getElementById("scrollProgress").style.opacity = 0;
   }
 });
 
