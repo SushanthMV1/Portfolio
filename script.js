@@ -5,7 +5,7 @@ window.addEventListener("scroll", () => {
   //Scroll Progress
   document.getElementById("scrollProgress1").style.width = scrollPercent + "%";
   let noScrollPercent = 100 - scrollPercent;
-  noScrollPercent = scrollPercent > 100 ? 0 : noScrollPercent; //Understand This
+  noScrollPercent = scrollPercent > 100 ? 0 : noScrollPercent;
   document.getElementById("scrollProgress2").style.width =
     noScrollPercent + "%";
 
