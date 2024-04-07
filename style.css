@@ -281,6 +281,11 @@ footer label {
   cursor: pointer;
 }
 
+.contactButton:active {
+  box-shadow: 0rem 0.15rem #2b7a78;
+  transform: translateY(0.15rem);
+}
+
 /* Footer Right */
 .footerRight {
   width: 30%;
